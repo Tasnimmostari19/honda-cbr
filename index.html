@@ -30,7 +30,7 @@
         <div class="w-auto row bg-color d-flex flex-row align-items-center justify-content-center text-white">
             <div class="col-lg-6 col-12">
                 <p>Computer-controlled digital transistorized with electronic advance</p>
-                <h1>Honda CBR 300R</h1>
+                <h1 class="mb-3">Honda CBR 300R</h1>
                 <p class="text-light light">Amet minim mollit non deserunt ullamco est sit aliqua
                     dolor
                     do amet sint.
@@ -39,33 +39,51 @@
                     duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
 
                 <!--purchase Button trigger modal -->
-                <button type="button" class="btn purchase text-white orange-bg" data-bs-toggle="modal"
-                    data-bs-target="#staticBackdrop">
-                    Purchase
-                </button>
+
 
                 <!-- Modal -->
-                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
-                    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                    <div class="modal-dialog">
+                <div class="modal fade" id="exampleModalToggle" aria-hidden="true"
+                    aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="staticBackdropLabel">Purchase Information</h5>
+                                <h5 class="modal-title" id="exampleModalToggleLabel">Purchase Information</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
                                     aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                                <p>To purchase you have to sign up/login</p>
+                                To purchase you have to sign up/login.
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Understood</button>
+                                <button class="btn btn-primary" data-bs-target="#exampleModalToggle2"
+                                    data-bs-toggle="modal" data-bs-dismiss="modal">Login</button>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="modal fade" id="exampleModalToggle2" aria-hidden="true"
+                    aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalToggleLabel2">Login</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                Login Information
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-primary" data-bs-target="#exampleModalToggle"
+                                    data-bs-toggle="modal" data-bs-dismiss="modal">Back to first</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="btn orange-bg text-white" data-bs-toggle="modal" href="#exampleModalToggle"
+                    role="button">Purchase</a>
 
-
+                <!-- Image -->
             </div>
             <div class="col-lg-6 col-12">
                 <img src="images/header-bike.png" alt="">
@@ -333,8 +351,8 @@
         <!-- contact us start -->
 
         <div class="m-5 p-5">
-            <div class="bg-body rounded contact mb-5 pb-5">
-                <h1 class="text-center bike">Contact Us</h1>
+            <div class="bg-body rounded">
+                <h1 class="text-center bike mb-5">Contact Us</h1>
                 <div class="d-flex justify-content-center">
                     <div class="me-5">
                         <a href="https://web.facebook.com/HeroMotoCorpBD"><i class="fab fa-facebook-f"></i></a>
@@ -360,9 +378,6 @@
 
     <!-- footer start -->
     <footer>
-        <div class="bg-dark">
-
-        </div>
     </footer>
     <!-- footer end -->
 
