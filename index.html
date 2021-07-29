@@ -12,16 +12,23 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- ----- -->
 
+    <!-- font awsome -->
+    <script src="https://kit.fontawesome.com/370fb0e075.js" crossorigin="anonymous"></script>
+    <!-- -------- -->
+
     <!-- custome css -->
     <link rel="stylesheet" href="css/style.css">
     <!-- --- -->
 </head>
 
 <body>
+
+
+
     <!-- header start -->
     <header>
-        <div class="w-100 row bg-color d-flex flex-row align-items-center justify-content-center text-white">
-            <div class="col-lg-6">
+        <div class="container w-auto row bg-color d-flex flex-row align-items-center justify-content-center text-white">
+            <div class="col-lg-6 col-12">
                 <p>Computer-controlled digital transistorized with electronic advance</p>
                 <h1>Honda CBR 300R</h1>
                 <p class="text-light" style="width: 28rem" ;>Amet minim mollit non deserunt ullamco est sit aliqua dolor
@@ -29,9 +36,37 @@
                     Velit
                     officia consequat
                     duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-                <button type="button" class="btn purchase text-white orange-bg">Purchase</button>
+
+                <!--purchase Button trigger modal -->
+                <button type="button" class="btn purchase text-white orange-bg" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">
+                    Purchase
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="staticBackdropLabel">Purchase Information</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>To purchase you have to sign up/login</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Understood</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6 col-12">
                 <img src="images/header-bike.png" alt="">
             </div>
 
@@ -39,17 +74,214 @@
     </header>
     <!-- header end -->
 
+
+
     <!-- main start -->
     <main>
-        <h1 class="text-center bike">Fetured Bikes 2021</h1>
-        <h5 class="text-center best orange-text">Best bike collection</h5>
-        <div class="d-flex justify-content-evenly">
-            <img class="gray" src="images/feature-bike.jpg" style="height: 243px; width: 288px;" alt="">
-            <img src="images/feature-bike.jpg" style="height: 243px; width: 288px;" alt="">
-            <img class="gray" src="images/feature-bike.jpg" style="height: 243px; width: 288px;" alt="">
-        </div>
+        <!-- Fetured bike section start -->
+        <section class="my-5 pb-5">
+            <h1 class="text-center bike">Fetured Bikes 2021</h1>
+            <h5 class="text-center best orange-text mb-5">Best bike collection</h5>
+            <div class="container row row-cols-1 row-cols-md-3 pt-5 mx-5 px-5">
+                <div class="col d-flex justify-content-center">
+                    <img class="gray" src="images/feature-bike.jpg" style="height: 243px; width: 288px;" alt="">
+                </div>
+                <div class="col d-flex justify-content-center">
+                    <img src="images/feature-bike.jpg" style="height: 243px; width: 288px;" alt="">
+                </div>
+                <div class="col d-flex justify-content-center">
+                    <img class="gray" src="images/feature-bike.jpg" style="height: 243px; width: 288px;" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- Fetured bike section end -->
+
+
+
+        <!-- Happy Clients section start -->
+        <section class="py-5">
+            <h1 class="text-center bike">Happy <span class="orange-text"> Clients says</span></h1>
+            <div class="container row row-cols-1 row-cols-md-3 d-flex justify-content-evenly">
+                <div class="col" style="width: 323px;
+                height: 478.01px;">
+                    <div class="card h-100 d-flex justify-content-center align-items-center">
+                        <img src="images/user-1.png" class="card-img-top rounded-circle"
+                            style="width: 149px; height: 149px;" alt="...">
+                        <div class="d-flex flex-column justify-content-center align-items-center">
+                            <div class="card-body">
+                                <p class="card-text text-center">Slate helps you see how
+                                    many more days you need
+                                    to work to reach your financial
+                                    goal for the month and year.</p>
+                            </div>
+                            <div>
+                                <div>
+                                    <i class="fas fa-star orange-text"></i>
+                                    <i class="fas fa-star orange-text"></i>
+                                    <i class="fas fa-star orange-text"></i>
+                                    <i class="fas fa-star orange-text"></i>
+                                    <i class="far fa-star orange-text"></i>
+                                </div>
+                                <h5 class="best text-info text-center mt-3">Regina Miles</h5>
+                                <h5 class="best text-center mt-3">Banker</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col" style="width: 323px;
+                height: 478.01px;">
+                    <div class="card h-100 d-flex justify-content-center align-items-center">
+                        <img src="images/user-2.png" class="card-img-top rounded-circle"
+                            style="width: 149px; height: 149px;" alt="...">
+                        <div class="d-flex flex-column justify-content-center align-items-center">
+                            <div class="card-body">
+                                <p class="card-text text-center">Slate helps you see how
+                                    many more days you need
+                                    to work to reach your financial
+                                    goal for the month and year.</p>
+                            </div>
+                            <div>
+                                <div>
+                                    <i class="fas fa-star orange-text"></i>
+                                    <i class="fas fa-star orange-text"></i>
+                                    <i class="fas fa-star orange-text"></i>
+                                    <i class="fas fa-star orange-text"></i>
+                                    <i class="far fa-star orange-text"></i>
+                                </div>
+                                <h5 class="best text-info text-center mt-3">Regina Miles</h5>
+                                <h5 class="best text-center mt-3">Banker</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col" style="width: 323px;
+                height: 478.01px;">
+                    <div class="card h-100 d-flex justify-content-center align-items-center">
+                        <img src="images/user-3.jpg" class="card-img-top rounded-circle"
+                            style="width: 149px; height: 149px;" alt="...">
+                        <div class="d-flex flex-column justify-content-center align-items-center">
+                            <div class="card-body">
+                                <p class="card-text text-center">Slate helps you see how
+                                    many more days you need
+                                    to work to reach your financial
+                                    goal for the month and year.</p>
+                            </div>
+                            <div>
+                                <div>
+                                    <i class="fas fa-star orange-text"></i>
+                                    <i class="fas fa-star orange-text"></i>
+                                    <i class="fas fa-star orange-text"></i>
+                                    <i class="fas fa-star orange-text"></i>
+                                    <i class="far fa-star orange-text"></i>
+                                </div>
+                                <h5 class="best text-info text-center mt-3">Regina Miles</h5>
+                                <h5 class="best text-center mt-3">Banker</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Happy Clients section end -->
+
+        <!-- frequently asked question section start -->
+
+        <section>
+            <h1 class="text-center bike pb-5">Frequently Asked <span class="orange-text">Questions</span></h1>
+            <div class="row mt-5">
+                <div class="col-lg-1">
+
+                </div>
+                <div class=" col-lg-5 col-md-12 d-flex justify-content-center">
+                    <img style="width: 431.2px;
+                    height: 423.5px;" src="images/faq.png" alt="">
+                </div>
+                <div class="col-lg-5 col-md-12">
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                    aria-controls="flush-collapseOne">
+                                    <h5 class="fw-bold">
+                                        What are the most important things I should
+                                        know about riding a bike?</h5>
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Safety First! Always obey the rules of the road. Obey all
+                                    traffic signals, signs, and laws. Get in the mindset of “driving” your bike—not just
+                                    “riding” your bike. This will help you be a more focused and legally compliant bike
+                                    rider. </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                    aria-controls="flush-collapseTwo">
+                                    <h5 class="fw-bold">How can I tell if my helmet is old and I need a
+                                        new one?</h5>
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                                    demonstrate the <code>.accordion-flush</code> class. This is the second item's
+                                    accordion body. Let's imagine this being filled with some actual content.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                    aria-controls="flush-collapseThree">
+                                    <h5 class="fw-bold">My bike has been in storage is it safe to ride?</h5>
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                                    demonstrate the <code>.accordion-flush</code> class. This is the third item's
+                                    accordion body. Nothing more exciting happening here in terms of content, but just
+                                    filling up the space to make it look, at least at first glance, a bit more
+                                    representative of how this would look in a real-world application.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseFour" aria-expanded="false"
+                                    aria-controls="flush-collapseFour">
+                                    <h5 class="fw-bold">What rules should I follow when riding my bike?</h5>
+                                </button>
+                            </h2>
+                            <div id="flush-collapseFour" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                                    demonstrate the <code>.accordion-flush</code> class. This is the third item's
+                                    accordion body. Nothing more exciting happening here in terms of content, but just
+                                    filling up the space to make it look, at least at first glance, a bit more
+                                    representative of how this would look in a real-world application.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-1">
+
+                </div>
+
+
+            </div>
+        </section>
+        <!-- frequently asked question section end -->
+
     </main>
+
     <!-- main end -->
+
+
 
     <!-- footer start -->
     <footer>
