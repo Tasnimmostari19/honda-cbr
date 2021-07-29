@@ -17,9 +17,18 @@ body{
     padding: 155px;
     padding-bottom: 96px;
 }
+.light{
+    width: 28rem;
+}
 .purchase{
     padding: 10px 46px;
 }
+
+.image{
+    width: 431.2px;
+    height: 423.5px;
+}
+
 /* Fetured Bikes style */
 .bike{
     font-weight: 600;
@@ -32,5 +41,42 @@ body{
 .gray{
     filter: grayscale(100%);
 }
+.coll{
+    margin-left: 5rem;
+    padding-top: 5rem;
+}
+/* happy clients */
+.client{
+    margin-left: 5rem;
+    padding-left: 5rem;
+}
 
 /* media quary style */
+@media only screen and (max-width:768px){
+    .bg-color{
+
+        width: 100%;
+        padding-left: 16px;
+        
+    }
+   .col-12>.light{
+    width: 20rem;
+   }
+    .col-12>img{
+        margin-top: 56px;
+        width: 321px;
+        height: 260px;
+    }
+    .image{
+        width: 274.2px;
+        height: 269.3px;
+        margin-bottom: 4rem;
+    }
+    .coll{
+        margin-left: 1rem;
+    }
+    .client{
+        margin: 0rem;
+    }
+    
+}
