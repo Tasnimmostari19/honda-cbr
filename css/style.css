@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+/* orange color */
+.orange-bg{
+    background-color: #E76F51;
+}
+.orange-text{
+    color: #E76F51;
+}
+/* tag style */
+body{
+    font-family: poppins;
+}
+/* header style */
+.bg-color{
+    background-color: #264653;
+    padding: 155px;
+    padding-bottom: 96px;
+}
+.purchase{
+    padding: 10px 46px;
+}
+/* Fetured Bikes style */
+.bike{
+    font-weight: 600;
+    font-size: 48px;
+}
+.best{
+    font-weight: 600;
+    font-size: 14px;
+}
